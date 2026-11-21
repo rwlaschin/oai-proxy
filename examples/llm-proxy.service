@@ -1,0 +1,7 @@
+[Unit]
+After=llm.service
+[Service]
+ExecStart=/usr/local/bin/oai-proxy 11434 127.0.0.1 8080
+Restart=always
+[Install]
+WantedBy=multi-user.target
